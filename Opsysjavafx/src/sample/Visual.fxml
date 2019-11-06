@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.457286432160804" layoutX="187.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="190.0" prefWidth="598.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vali või sisesta kuni kümneelemendiline järjend kujul 3,5;2,7;8,2;4,6;7,1;6,4;8,8;3,6;1,10;9,2" />
+                  <RadioButton fx:id="esimeneRadio" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" selected="true" text="Esimene">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="muster" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="teineRadio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" selected="true" text="Teine" toggleGroup="$muster" />
+                  <RadioButton fx:id="kolmasRadio" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" selected="true" text="Kolmas" toggleGroup="$muster" />
+                  <RadioButton fx:id="endaRadio" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" selected="true" text="Enda oma" toggleGroup="$muster" />
+                  <Text layoutX="179.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,5;2,7;9,2;4,6;7,1;6,4;8,8;3,6;1,10;9,2" />
+                  <Text layoutX="179.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1,10;6,6;3,9;2,4;1,6;5,2;1,4;5,2;2,1;2,7" />
+                  <Text layoutX="179.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,10;6,6;3,9;8,4;3,6;5,12;1,4;15,3;3,4;9,7" />
+                  <TextArea fx:id="userEnteredPattern" layoutX="172.0" layoutY="116.0" prefHeight="37.0" prefWidth="310.0" promptText="Sisesta siia oma muster" />
+                  <Button fx:id="firstFitButton" layoutX="14.0" layoutY="153.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="50.0" text="First-fit" />
+                  <Button fx:id="lastFitButton" layoutX="79.0" layoutY="153.0" mnemonicParsing="false" text="Last-fit" />
+                  <Button fx:id="worstFitButton" layoutX="153.0" layoutY="153.0" mnemonicParsing="false" text="Worst-fit" />
+                  <Button fx:id="randomFitButton" layoutX="239.0" layoutY="153.0" mnemonicParsing="false" text="Random-fit" />
+                  <Button fx:id="puhastaValjundButton" layoutX="351.0" layoutY="153.0" mnemonicParsing="false" text="Puhasta väljund" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

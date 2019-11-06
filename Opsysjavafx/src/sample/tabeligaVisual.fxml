@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.457286432160804" layoutX="187.0" layoutY="100.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="190.0" prefWidth="598.0">
+               <children>
+                  <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vali või sisesta kuni kümneelemendiline järjend kujul 3,5;2,7;8,2;4,6;7,1;6,4;8,8;3,6;1,10;9,2" />
+                  <RadioButton fx:id="esimeneRadio" layoutX="14.0" layoutY="39.0" mnemonicParsing="false" selected="true" text="Esimene">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="muster" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="teineRadio" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" selected="true" text="Teine" toggleGroup="$muster" />
+                  <RadioButton fx:id="kolmasRadio" layoutX="14.0" layoutY="90.0" mnemonicParsing="false" selected="true" text="Kolmas" toggleGroup="$muster" />
+                  <RadioButton fx:id="endaRadio" layoutX="14.0" layoutY="118.0" mnemonicParsing="false" selected="true" text="Enda oma" toggleGroup="$muster" />
+                  <Text layoutX="179.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4,5;2,7;9,2;4,6;7,1;6,4;8,8;3,6;1,10;9,2" />
+                  <Text layoutX="179.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1,10;6,6;3,9;2,4;1,6;5,2;1,4;5,2;2,1;2,7" />
+                  <Text layoutX="179.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5,10;6,6;3,9;8,4;3,6;5,12;1,4;15,3;3,4;9,7" />
+                  <TextArea fx:id="userEnteredPattern" layoutX="172.0" layoutY="116.0" prefHeight="37.0" prefWidth="310.0" promptText="Sisesta siia oma muster" />
+                  <Button fx:id="firstFitButton" layoutX="14.0" layoutY="153.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="50.0" text="First-fit" />
+                  <Button fx:id="lastFitButton" layoutX="79.0" layoutY="153.0" mnemonicParsing="false" text="Last-fit" />
+                  <Button fx:id="worstFitButton" layoutX="153.0" layoutY="153.0" mnemonicParsing="false" text="Worst-fit" />
+                  <Button fx:id="randomFitButton" layoutX="239.0" layoutY="153.0" mnemonicParsing="false" text="Random-fit" />
+                  <Button fx:id="puhastaValjundButton" layoutX="351.0" layoutY="153.0" mnemonicParsing="false" text="Puhasta väljund" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="displayTable" layoutX="44.0" layoutY="7.0" prefHeight="213.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                      <TableColumn fx:id="rida1" minWidth="0.0" prefWidth="12.0" text="1" />
+                      <TableColumn fx:id="rida2" prefWidth="13.0" text="2" />
+                        <TableColumn fx:id="rida3" prefWidth="11.0" text="3" />
+                        <TableColumn fx:id="rida4" prefWidth="11.0" text="4" />
+                        <TableColumn fx:id="rida5" prefWidth="11.0" text="5" />
+                        <TableColumn fx:id="rida6" prefWidth="12.0" text="6" />
+                        <TableColumn fx:id="rida7" prefWidth="13.0" text="7" />
+                        <TableColumn fx:id="rida8" prefWidth="13.0" text="8" />
+                        <TableColumn fx:id="rida9" prefWidth="15.0" text="9" />
+                        <TableColumn fx:id="rida10" prefWidth="18.0" text="10" />
+                        <TableColumn fx:id="rida11" prefWidth="20.0" text="11" />
+                        <TableColumn fx:id="rida12" prefWidth="19.0" text="12" />
+                        <TableColumn fx:id="rida13" prefWidth="18.0" text="13" />
+                        <TableColumn fx:id="rida14" prefWidth="18.0" text="14" />
+                        <TableColumn fx:id="rida15" prefWidth="20.0" text="15" />
+                        <TableColumn fx:id="rida16" prefWidth="18.0" text="16" />
+                        <TableColumn fx:id="rida17" prefWidth="18.0" text="17" />
+                        <TableColumn fx:id="rida18" prefWidth="18.0" text="18" />
+                        <TableColumn fx:id="rida19" prefWidth="20.0" text="19" />
+                        <TableColumn fx:id="rida20" prefWidth="20.0" text="20" />
+                        <TableColumn fx:id="rida21" prefWidth="19.0" text="21" />
+                        <TableColumn fx:id="rida22" prefWidth="19.0" text="22" />
+                        <TableColumn fx:id="rida23" prefWidth="18.0" text="23" />
+                        <TableColumn fx:id="rida24" prefWidth="20.0" text="24" />
+                        <TableColumn fx:id="rida25" prefWidth="19.0" text="25" />
+                        <TableColumn fx:id="rida26" prefWidth="18.0" text="26" />
+                        <TableColumn fx:id="rida27" prefWidth="21.0" text="27" />
+                        <TableColumn fx:id="rida28" prefWidth="27.0" text="28" />
+                        <TableColumn fx:id="rida29" prefWidth="19.0" text="29" />
+                        <TableColumn fx:id="rida30" prefWidth="22.0" text="30" />
+                        <TableColumn fx:id="rida31" prefWidth="21.0" text="31" />
+                        <TableColumn fx:id="rida32" prefWidth="23.0" text="32" />
+                        <TableColumn fx:id="rida33" prefWidth="20.0" text="33" />
+                        <TableColumn fx:id="rida34" prefWidth="20.0" text="34" />
+                        <TableColumn fx:id="rida35" prefWidth="25.0" text="35" />
+                        <TableColumn fx:id="rida36" prefWidth="25.0" text="36" />
+                        <TableColumn fx:id="rida37" prefWidth="24.0" text="37" />
+                        <TableColumn fx:id="rida38" prefWidth="19.0" text="38" />
+                        <TableColumn fx:id="rida39" prefWidth="24.0" text="39" />
+                        <TableColumn fx:id="rida40" prefWidth="25.0" text="40" />
+                        <TableColumn fx:id="rida41" prefWidth="24.0" text="41" />
+                        <TableColumn fx:id="rida42" prefWidth="19.0" text="42" />
+                        <TableColumn fx:id="rida43" prefWidth="25.0" text="43" />
+                        <TableColumn fx:id="rida44" prefWidth="28.0" text="44" />
+                        <TableColumn fx:id="rida45" prefWidth="23.0" text="45" />
+                        <TableColumn fx:id="rida46" prefWidth="21.0" text="46" />
+                        <TableColumn fx:id="rida47" prefWidth="29.0" text="47" />
+                        <TableColumn fx:id="rida48" prefWidth="25.0" text="48" />
+                        <TableColumn fx:id="rida49" minWidth="0.0" prefWidth="22.0" text="49" />
+                        <TableColumn fx:id="rida50" prefWidth="35.0" text="50" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
